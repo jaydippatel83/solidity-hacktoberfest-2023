@@ -33,5 +33,51 @@ npx hardhat
 
 ```
 
-5) ****
+5) **Write Solidity Smart Contract** 
+ 
+**Create New Contracts:** Create a new solidity smart contract. Make sure to follow best practices, include relevant comments, and write test cases.
+ 
+**Enhance Existing Contracts:** If you come across an existing contract that can be improved, consider enhancing it by creating a new version. Ensure backward compatibility and document the changes.
 
+**Documentation:** Create clear and concise documentation for each smart contract. Good documentation helps other developers understand how to use the contract.
+
+**Testing:** Ensure that your smart contract passes all relevant tests. Write comprehensive test cases to cover different scenarios.
+
+```javascript
+npx hardhat compile // Compile the smart contract
+npx hardhat test // Test the smart contract
+npx hardhat run scripts/deploy.js // deploy smart contract
+```
+6) **Create .gitignore file inside contract dir**
+```javascript
+node_modules
+.env
+coverage
+coverage.json
+typechain
+typechain-types
+
+# Hardhat files
+cache
+artifacts 
+
+```
+
+6) **Commit Your Changes:** Once your changes are ready, commit them with a descriptive message.
+```javascript
+    git add .
+    git commit -m "Add feature XYZ" (replace with a meaningful commit message)
+
+```
+ 
+7) **Push Your Changes:** Push your changes to your fork on GitHub.
+```javascript
+    git push origin feature-name 
+
+```
+
+8) **Create a Pull Request (PR):** Go to your fork on GitHub, and you will see a button to create a pull request. Provide a clear description of your changes in the PR.
+
+9) **Review and Collaborate:** Collaborate with others on your PR. Make any necessary updates based on feedback.
+
+10) **Celebrate:** Congratulations! You've made a valuable contribution to this open-source project during Hacktoberfest 2023. 
