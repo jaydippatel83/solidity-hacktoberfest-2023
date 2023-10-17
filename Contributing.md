@@ -29,6 +29,7 @@ Initialize Hardhat: Set up Hardhat for your project by running the following com
 
 ```javascript
 npm install --save-dev hardhat 
+npm install hardhat-deploy hardhat-deploy-ethers 
 npx hardhat
 
 ```
@@ -47,6 +48,13 @@ npx hardhat
 npx hardhat compile // Compile the smart contract
 npx hardhat test // Test the smart contract
 npx hardhat run scripts/deploy.js // deploy smart contract
+```
+
+**To run Hardhat Network in this way, run npx hardhat node:**
+```javascript
+    npx hardhat node //Started HTTP and WebSocket JSON-RPC server at http://127.0.0.1:8545/
+
+    npx hardhat run scripts/deploy.js --network hardhat
 ```
 
 6) **Create .gitignore file inside contract dir**
