@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.20;
 
-import "@openzeppelin/contracts@5.0.0/token/ERC20/ERC20.sol";
-import "@openzeppelin/contracts@5.0.0/access/Ownable.sol";
+import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
+import "@openzeppelin/contracts/access/Ownable.sol";
 
 contract CrowdFundToken is ERC20, Ownable {
     constructor(address initialOwner)
